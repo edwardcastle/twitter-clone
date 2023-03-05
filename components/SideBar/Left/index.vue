@@ -1,11 +1,10 @@
 <template>
-  <div class="h-screen flex flex-col">
-    <div class="p-2 my-2 hover:bg-blue-50 rounded-full w-min dark:hover:bg-white/20"
-         :class="defaultTransition"
-    >
+  <div class="h-screenautosave flex flex-col">
+    <div class="p-2 my-2 hover:bg-blue-50 rounded-full 
+        w-min dark:hover:bg-white/20" :class="defaultTransition">
       <nuxt-link to="/">
         <div class="w-8 h-8">
-          <LogoTwitter/>
+          <LogoTwitter />
         </div>
       </nuxt-link>
     </div>
@@ -13,7 +12,7 @@
     <div class="mt-2 space-y-3">
       <SideBarLeftTab active>
         <template v-slot:icon>
-          <HomeIcon/>
+          <HomeIcon />
         </template>
         <template v-slot:name>
           Home
@@ -22,7 +21,7 @@
 
       <SideBarLeftTab active>
         <template v-slot:icon>
-          <HashtagIcon/>
+          <HashtagIcon />
         </template>
         <template v-slot:name>
           Explore
@@ -40,7 +39,7 @@
 
       <SideBarLeftTab active>
         <template v-slot:icon>
-          <InboxIcon/>
+          <InboxIcon />
         </template>
         <template v-slot:name>
           Messages
@@ -49,7 +48,7 @@
 
       <SideBarLeftTab active>
         <template v-slot:icon>
-          <BookmarkIcon/>
+          <BookmarkIcon />
         </template>
         <template v-slot:name>
           Bookmarks
@@ -58,7 +57,7 @@
 
       <SideBarLeftTab active>
         <template v-slot:icon>
-          <DocumentTextIcon/>
+          <DocumentTextIcon />
         </template>
         <template v-slot:name>
           Lists
@@ -67,7 +66,7 @@
 
       <SideBarLeftTab active>
         <template v-slot:icon>
-          <UsersIcon/>
+          <UsersIcon />
         </template>
         <template v-slot:name>
           Profile
@@ -84,11 +83,10 @@
       </SideBarLeftTab>
     </div>
   </div>
-
 </template>
 
 <script setup>
-import {HomeIcon} from '@heroicons/vue/solid'
+import { HomeIcon } from '@heroicons/vue/solid'
 import {
   HashtagIcon,
   BellIcon,
@@ -99,9 +97,7 @@ import {
   DotsCircleHorizontalIcon
 } from '@heroicons/vue/outline'
 
-const {defaultTransition} = useTailwindConfig()
+const { defaultTransition } = useTailwindConfig()
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
