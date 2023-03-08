@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "@heroicons/vue": "v1",
-    "@prisma/client": "4.11.0"
+    "@prisma/client": "4.11.0",
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "^9.0.0"
   }
 }
