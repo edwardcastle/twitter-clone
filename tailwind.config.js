@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
+  darkMode: "class",
 
   theme: {
-
     screens: {
       xs: "614px",
       sm: "1002px",
@@ -13,7 +12,6 @@ module.exports = {
     },
 
     extend: {
-
       colors: {
         dim: {
           50: "#5F99F7",
@@ -28,10 +26,8 @@ module.exports = {
           900: "#15202b",
         },
       },
-
     },
   },
 
-  plugins: [],
-
-}
+  plugins: [require("@tailwindcss/forms")],
+};
