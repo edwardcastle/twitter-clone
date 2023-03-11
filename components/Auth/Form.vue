@@ -11,13 +11,28 @@
 </template>
 
 <script setup>
-
+const {login} = useAuth()
 // data
 const data = reactive({
+    username: '',
     password: '',
-    username: ''
+    loading: false
 })
 
 // Functions
-const handleLogin = () => alert(JSON.stringify(data))
+const handleLogin = async() => {
+    data.loading = true
+    try {
+        await login({
+        username: data.username,
+        password: data.password
+    })
+        }
+    catch{
+
+    }
+    finally{
+
+    }
+}
 </script>
