@@ -1,9 +1,10 @@
 <template>
   <div :class="{ 'dark': darkMode }">
     <div class="bg-white dark:bg-dim-900">
-      <div class="min-h-screen">
-        <div class="grid grid-cols-12 mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:gap-5">
 
+      <!-- App -->
+      <div v-if="false" class="min-h-screen">
+        <div class="grid grid-cols-12 mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:gap-5">
           <!-- Left sidebar -->
           <div class="hidden min-h-screen md:block xs-col-span-1 xl:col-span-2">
             <div class="sticky top-0">
@@ -13,7 +14,7 @@
           <!-- End Left sidebar -->
 
           <!-- Main content -->
-          <main class="col-span-12 md:col-span-8 xl:col-span-6">
+          <main class="col-span-12 md:col-span-8 xl:col-span-6  ">
             <router-view />
           </main>
           <!-- End Main content -->
@@ -27,6 +28,8 @@
           <!-- End Right content -->
         </div>
       </div>
+
+      <AuthPage v-else />
     </div>
   </div>
 </template>
