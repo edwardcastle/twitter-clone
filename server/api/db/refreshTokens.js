@@ -5,3 +5,11 @@ export const createRefreshToken = (refreshToken) => {
     data: refreshToken,
   });
 };
+
+export const getRefreshTokenBytToken = (token) => {
+  return prisma.refreshToken.findUnique({
+    where: {
+      token: token
+    }
+  });
+};
